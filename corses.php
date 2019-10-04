@@ -13,6 +13,7 @@ if($request[0] != "api"){
 // TEST PUT : {"code":"Test","name":"Test", "prog":"B",  "course_syllabus": "Test"}
 // Send return header information
 header("Content-Type: application/json; charset=iso-8859-1");
+header("Access-Control-Allow-Origin: *");
 $course = new Courses();
 if(isset($request[1])){
 $id = $request[1];
