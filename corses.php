@@ -5,7 +5,9 @@ include("includes/classes/addCourse.php");
 
 $method = $_SERVER['REQUEST_METHOD'];
 $input = json_decode(file_get_contents('php://input'),true);
+
 $request = explode('/', trim($_SERVER['PATH_INFO'],'/'));
+
 if($request[0] != "api"){ 
 	http_response_code(404);
 	exit();
@@ -70,3 +72,4 @@ $course->updateCourse($code, $name, $prog, $sylla, $id);
         } 
             }
             echo json_encode($jsonArray, JSON_PRETTY_PRINT);
+            ?>
