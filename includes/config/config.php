@@ -8,6 +8,6 @@ function __autoload($class_name){
 define("DBHOST", "localhost");
 define("DBUSER", "root");
 define("DBPASS", ""); 
-define("DBDATABASE", "courses");
+define("DBDATABASE", "webb3");
 
 ?>
